@@ -12,7 +12,7 @@ class Ninja {
     }
 
     showstats() {
-        console.log(`Name: ${ this.ninjaname }, Strength ${ this.stength }, Speed: ${ this.speed }, Health: ${ this.health }`)
+        console.log(`Name: ${ this.ninjaname }, Strength ${ this.strength }, Speed: ${ this.speed }, Health: ${ this.health }`)
     }
 
     drinksake () {
