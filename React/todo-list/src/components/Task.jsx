@@ -4,7 +4,7 @@ const Task = (props) => {
     const {task, index, list, setList} = props;
     const onClick = () => {
         setList(() => {
-            return list.filter(task => list.indexOf(task) !== index)
+            return list.filter(chore => list.indexOf(chore) !== index)
         });
     }
 
@@ -15,7 +15,7 @@ const Task = (props) => {
 
     return (
         <div className = "box 2">
-            <h3 style = {{ textDecoration: task.isComplete && "line-through"}}> {task.name}</h3>
+            <h3 style = {{ textDecoration: task.isComplete && "line-through"}}> {task.name} {index}</h3>
 
             <div className = 'taskbox'>
                 <label htmlFor = "checkbox"> Completed?</label>

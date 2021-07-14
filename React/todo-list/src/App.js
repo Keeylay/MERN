@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
 import Input from './components/Input';
-import Stuff from './components/Task';
+import Task from './components/Task';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
 
       {list.map((task, i) => (
-        <Stuff task = {task} setList = {setList} index = {i} list = {list} />
+        <Task task = {task} setList = {setList} index = {i} list = {list} />
       ))}
 
       <Input list = {list} setList = {setList} />
