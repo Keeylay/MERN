@@ -16,7 +16,7 @@ function App() {
       <button onClick = {fetchPokemon}>Get Pokemon</button>
       {
         pokemon.map((item, i) => <h1 key = {i}> {item.name} </h1>)
-      }
+      } 
     </div>
   );
 }
